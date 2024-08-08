@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:go_router_example/page/page_1.dart';
-import 'package:go_router_example/router/app_router.dart';
+import 'package:go_router/go_router.dart';
+import 'package:go_router_example/router/app_routes.dart';
 
 main() {
   runApp(const MyApp());
@@ -14,11 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       title: "GoRouter Example",
   
-      routerConfig: AppRouter().router,
+      routerConfig: GoRouter(routes: $appRoutes),
     );
 
-    // return const MaterialApp(
-    //   home: Page1(),
-    // );
   }
 }
