@@ -7,4 +7,5 @@ class RouteConstants {
   static const String page3 = 'page3';
   static const String page4 = 'page4';
   static const String page5 = 'page5';
+  static const String page6 = 'page6';
 }
